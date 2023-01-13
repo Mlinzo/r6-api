@@ -5,7 +5,7 @@ const generalRouter = require('./routes/generalRouter.js');
 const notFoundRouter = require('./routes/notFoundRouter.js');
 
 
-const PORT = process.env.PORT ?? 8000;
+const PORT = process.env.PORT || 8000;
 const app = express();
 
 app.use(cors());
